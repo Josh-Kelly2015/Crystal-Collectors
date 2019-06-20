@@ -20,7 +20,7 @@
         <h4 class="text-white"> Welcome to CrystalsCollector!</h4>
     </div>
 
-    <div class="container bg-warning">
+    <div class="container bg-warning" id="instructions">
         <!-- instructions for the game -->
 
         <p>
@@ -28,26 +28,25 @@
         </p>
 
         <p>
-            You can do this by clicking the crystals located at the center of the page!
+            You can do this by clicking the Crystals located at the center of the page!
         </p>
 
         <p>
-            Each crystal has its own hidden value! You will have to click each one to determine each crystals worth!
+            Each Crystal has its own hidden Value! You will have to click each one to determine each Crystals worth!
         </p>
 
         <p>
-            When you match your score in the blue rectangle with the goal number in the green box then you win! After
-            you win the
-            game is reset and you are awarded one point to your Win Stat.
+            When you match your score in the Blue Rectangle with the Goal number in the Green Box then you win!
+            After you win the game is reset and you are awarded one point to your Win Stat.
         </p>
 
         <p>
-            If you go over the goal then you lose!! After you lose the
-            game is reset and you are awarded one point to your Losses Stat.
+            If you go over the Goal then you lose!!
+            After you lose the game is reset and you are given one point to your Losses Stat.
         </p>
 
         <p>
-            *Remember! Each time you win, or lose a game, each crystal is given a brand new value! Click each one to
+            *Remember! Each time you win, or lose a game, each Crystal is given a brand new value! Click each one to
             figure out what they are. *
         </p>
 
@@ -60,7 +59,7 @@
         <div class="container bg-success w-25 pt-3 pl-5" id="goalDiv">
             <!-- goal that we are trying to match with the score -->
 
-            <p id="goal">34</p>
+            <p id="goal">_</p>
         </div>
 
         <div class="container bg-info w-25" id="stats">
@@ -81,29 +80,36 @@
 
     </div>
 
-    <div class="container d-flex justify-content-center mb-3">
+   <div class= "btn-group" role="button" aria-label="Basic example">
         <!--clickable images that return a hidden score. INLINE IMAGES  -->
         <!-- red crystal. add bootstrap class of button?, value?  -->
 
-        <img src="assets/images/Blue_Crystal.jpg" alt="6" height="70" width="70">
 
+        <button type = "button" class="btn btn-default" value="">
+            <img src="assets/images/Blue_Crystal.jpg" alt="Blue Crystal" height="80" width="80">
+        </button>
 
         <!-- blue crystal. add bootstrap class of button?, value?  -->
-        <img src="assets/images/Green_Crystal.jpg" alt="6" height="70" width="70">
-
+        <button class="btn btn-default" value="">
+            <img src="assets/images/Green_Crystal.jpg" alt="Green Crystal" height="80" width="80">
+        </button>
 
         <!-- orange crystal. add bootstrap class of button?, value?  -->
-        <img src="assets/images/Purple_Crystal.jpg" alt="6" height="70" width="70">
+        <button class="btn btn-default" value="">
+            <img src="assets/images/Purple_Crystal.jpg" alt="Purple Crystal" height="80" width="80">
+        </button>
 
 
         <!--green crystal. add bootstrap class of button?, value?  -->
-        <img src="assets/images/Rainbow_Crystal.jpg" alt="6" height="70" width="70">
+        <button class="btn btn-default" value="">
+            <img src="assets/images/Rainbow_Crystal.jpg" alt="Rainbow Crystal" height="80" width="80">
+        </button>
     </div>
 
 
     <div class="container d-flex justify-content-center mb-3">
 
-        <div class="container bg-primary w-75 p-1" id="useless">
+        <div class="container bg-primary w-75 p-1">
             <!-- Your total score is:  -->
 
             <p id="announcement">Your total score is: </p>
@@ -119,7 +125,15 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js" async defer></script>
 </body>
 
