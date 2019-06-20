@@ -22,40 +22,37 @@
 
     <div class="container bg-warning">
         <!-- instructions for the game -->
+
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis odit ipsam, reiciendis, dicta amet
-            sapiente, obcaecati fuga doloribus fugit sunt aspernatur harum pariatur. Rem odit ratione excepturi
-            velit
-            id. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Match your Total Score seen in the long blue rectangle with the Goal in the green box!
         </p>
 
-        </br>
-
         <p>
-            Unde minus dolorem delectus doloribus ipsum
-            facere possimus eaque quam, ut est molestias officia eius a, odio impedit aperiam dolores quis ea. Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Sunt neque
+            You can do this by clicking the crystals located at the center of the page!
         </p>
 
-        </br>
-
         <p>
-            fuga, iure est amet dolores praesentium possimus ducimus, asperiores, perspiciatis atque libero commodi
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam asperiores dicta, deserunt minus
-            voluptates eum tenetur esse incidunt omnis quaerat blanditiis adipisci nam cupiditate libero magni,
-            aliquam odio ullam?
+            Each crystal has its own hidden value! You will have to click each one to determine each crystals worth!
         </p>
 
-        </br>
+        <p>
+            When you match your score in the blue rectangle with the goal number in the green box then you win! After
+            you win the
+            game is reset and you are awarded one point to your Win Stat.
+        </p>
 
         <p>
-            debitis expedita vero doloremque numquamsuscipit. Molestiae?Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Quaerat quas, totam minima
-            provident esse veniam rerum perferendis harum, iusto laudantium fugiat ex id cum. Quod id quia libero
-            consectetur voluptates
+            If you go over the goal then you lose!! After you lose the
+            game is reset and you are awarded one point to your Losses Stat.
+        </p>
+
+        <p>
+            *Remember! Each time you win, or lose a game, each crystal is given a brand new value! Click each one to
+            figure out what they are. *
         </p>
 
     </div>
+
 
     <div class="container d-flex mb-3">
         <!-- these two continers inside here will need to be inline with eachother  -->
@@ -63,22 +60,22 @@
         <div class="container bg-success w-25 pt-3 pl-5" id="goalDiv">
             <!-- goal that we are trying to match with the score -->
 
-            <p id = "goal">34</p>
+            <p id="goal">34</p>
         </div>
 
         <div class="container bg-info w-25" id="stats">
             <!-- You lost!! Wins: Losses:  -->
 
             <div class="container bg-info" id="winOrLoseDiv">
-                <p id = "lostWon">You lost!/won!</p>
+                <p id="lostWon">You lost!/won!</p>
             </div>
 
             <div class="container bg-info" id="winsDiv">
-                <p id = "wins">Wins: </p>
+                <p id="wins">Wins: </p>
             </div>
 
             <div class="container bg-info" id="lossesDiv">
-                <p id = "loses">Losses: </p>
+                <p id="loses">Losses: </p>
             </div>
         </div>
 
@@ -109,14 +106,14 @@
         <div class="container bg-primary w-75 p-1" id="useless">
             <!-- Your total score is:  -->
 
-            <p id = "totalScore">Your total score is: </p>
+            <p id="announcement">Your total score is: </p>
 
         </div>
 
         <div class="container bg-primary w-25 p-1" id="score">
-            <!-- contains score -->
+            <!-- contains total score of the sum of all buttons clicked -->
 
-            <p id = "score">0</p>
+            <p id="totalScore">0</p>
 
         </div>
     </div>
