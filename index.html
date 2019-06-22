@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type=text/css href="assets/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js" async defer></script>
 </head>
 
 <body>
@@ -59,7 +70,7 @@
         <div class="container bg-success w-25 pt-3 pl-5" id="goalDiv">
             <!-- goal that we are trying to match with the score -->
 
-            <p id="goal">_</p>
+            <p id="goal"></p>
         </div>
 
         <div class="container bg-info w-25" id="stats">
@@ -79,33 +90,33 @@
         </div>
 
     </div>
-
-   <div class= "btn-group" role="button" aria-label="Basic example">
-        <!--clickable images that return a hidden score. INLINE IMAGES  -->
-        <!-- red crystal. add bootstrap class of button?, value?  -->
-
-
-        <button type = "button" class="btn btn-default" value="">
-            <img src="assets/images/Blue_Crystal.jpg" alt="Blue Crystal" height="80" width="80">
-        </button>
-
-        <!-- blue crystal. add bootstrap class of button?, value?  -->
-        <button class="btn btn-default" value="">
-            <img src="assets/images/Green_Crystal.jpg" alt="Green Crystal" height="80" width="80">
-        </button>
-
-        <!-- orange crystal. add bootstrap class of button?, value?  -->
-        <button class="btn btn-default" value="">
-            <img src="assets/images/Purple_Crystal.jpg" alt="Purple Crystal" height="80" width="80">
-        </button>
+    <div class="container justify-content-center">
+        <div class="btn-group" role="button" aria-label="Basic example">
+            <!--clickable images that return a hidden score. INLINE IMAGES  -->
+            <!-- red crystal. add bootstrap class of button?, value?  -->
 
 
-        <!--green crystal. add bootstrap class of button?, value?  -->
-        <button class="btn btn-default" value="">
-            <img src="assets/images/Rainbow_Crystal.jpg" alt="Rainbow Crystal" height="80" width="80">
-        </button>
+            <button type="button" class="btn btn-default">
+                <img src="assets/images/Blue_Crystal.jpg"   id = "blueCrystal" height="80" width="80">
+            </button>
+
+            <!-- blue crystal. add bootstrap class of button?, value?  -->
+            <button type="button" class="btn btn-default">
+                <img src="assets/images/Green_Crystal.jpg" id = "greenCrystal" height="80" width="80">
+            </button>
+
+            <!-- orange crystal. add bootstrap class of button?, value?  -->
+            <button type="button" class="btn btn-default">
+                <img src="assets/images/Purple_Crystal.jpg"  id = "purpleCrystal" height="80" width="80">
+            </button>
+
+
+            <!--green crystal. add bootstrap class of button?, value?  -->
+            <button type="button" class="btn btn-default">
+                <img src="assets/images/Rainbow_Crystal.jpg" id = "rainbowCrystal" height="80" width="80">
+            </button>
+        </div>
     </div>
-
 
     <div class="container d-flex justify-content-center mb-3">
 
@@ -125,16 +136,6 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="assets/javascript/game.js" async defer></script>
 </body>
 
 </html>
