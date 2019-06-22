@@ -56,13 +56,14 @@ $("img[value]").on("click", function () {
     return document.getElementById("score").innerHTML = totalScore
 })
 
+//create a function that will add values together while keeping the score display updated. just like a calculator. 
 
-//player must add values together to equal the random number displayed by clicking images
-//these values are only discovered by the user after clicking the crystal
-//every clicked crystal updates the div this number is displayed in with the firstvalue + secondvalue
-//player wins++ if totalScore===goal
-//players loses++ if totalScore < goal 
-//game restarts after every win/lose
-//new game means new random number, new crystal values, score/score_counter reset 0
-//const wins/losses even after new games. 
+
+// if score === goal then reset goal, score, values. ++wins, and display " You won!"
+// else if continue game until score < goal 
+
+// if score < goal then reset goal, score, values, ++losses, display " You lost!"
+
+
+
 
