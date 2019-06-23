@@ -47,42 +47,27 @@
 //=============================================================================================================================================================================//
 
 window.onload = function () {
-    //need to figure out how to get the newScore to increment(?) or add the value of the crystal that is clicked to the latest value of #score 
-    $("#blueCrystal").on("click", function (newScore) {
-        newScore = value + crystals.blueCrystal;
-        $("#score").attr("value", newScore);
+    //need to figure out how to get the newScore to increment(?) or add the value of the crystal that is clicked to the latest value of #score. might need to change the way that i use my values
 
-        $("#score").text(newScore);
+    //blue crystal
+    $("button").on("click", function () {
+        newScore = value + crystals.blueCrystal;
+        totalScore = parseInt(newScore);
+        $("#blueCrystal").attr("value", totalScore);
+
+        $("#score").text(totalScore);
         console.log(newScore);
     });
 
-
-
-
-
-
-    //assign the randomNumber to the button images
-    // //blue crystal
-    // $("#blueCrystal").on("click", function () {
-    //     // $("#score").attr("value", crystals.blueCrystal);
-    //     // $("#score").text($("#score").attr("value"));
-    //     if ($("button").on("click", function (){
-    //         var value = parseInt($("#score").attr("value"));
-    //         var vals = value + crystals.blueCrystal;
-    //         $("#score").text(vals);
-    //     }
-
-
-    // });
-
-
-
-
     //green crystal
     $("#greenCrystal").on("click", function () {
-        $("#score").attr("value", crystals.greenCrystal);
+        newScore = value + crystals.greenCrystal;
 
-        console.log($("#score").attr("value"));
+        $("#score").attr("value", newScore);       
+        
+        $("#score").text(newScore);
+
+        console.log(newScore);
     });
 
     //purple crystal 
