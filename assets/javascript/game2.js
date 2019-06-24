@@ -49,8 +49,7 @@
 window.onload = function () {
 
     //variables
-    var newValue;
-    var randomNumber = function (min, max) { return Math.floor(Math.random() * (max - min)) + min; };
+    randomNumber = function (min, max) { return Math.floor(Math.random() * (max - min)) + min; };
     var crystals = {
         blueCrystal: randomNumber(1, 12),
         greenCrystal: randomNumber(1, 12),
@@ -63,57 +62,103 @@ window.onload = function () {
     (console.log(crystals.rainbowCrystal));
 
     //displays a random number to goal div
-    $("#goal").html(randomNumber(19, 120));
-     //need to figure out how to get the newScore to increment(?) or add the value of the crystal that is clicked to the latest value of #score. might need to change the way that i use my values
+    $("#goal").text(randomNumber(19, 120));
+
 
     //blue crystal
     $("#blueCrystal").on("click", function () {
 
-        if($("#score").text() === ""){
+        if ($("#score").text() === "") {
             $("#score").text(crystals.blueCrystal);
-         
-        }
-      else {
-        newValue = parseInt($("#score").text()) + crystals.blueCrystal;
 
-        $("#score").text(newValue);
-      }
+        }
+        else {
+            $("#score").text(parseInt($("#score").text()) + crystals.blueCrystal);
+
+
+        }
     });
 
     //green crystal
     $("#greenCrystal").on("click", function () {
-        $("#greenCrystal").attr("value", crystals.greenCrystal);       
-        
-        console.log($("#greenCrystal").attr("value"));
+
+        if ($("#score").text() === "") {
+            $("#score").text(crystals.greenCrystal);
+
+        }
+        else {
+            $("#score").text(parseInt($("#score").text()) + crystals.greenCrystal);
+
+        }
     });
 
     //purple crystal 
     $("#purpleCrystal").on("click", function () {
-        $("#purpleCrystal").attr("value", crystals.purplelCrystal);
+        if ($("#score").text() === "") {
+            $("#score").text(crystals.purpleCrystal);
 
-        console.log($("#purpleCrystal").attr("value"));
+        }
+        else {
+            $("#score").text(parseInt($("#score").text()) + crystals.purpleCrystal);
+
+        }
     });
 
     //rainbow crystal
     $("#rainbowCrystal").click(function () {
-        $("#rainbowCrystal").attr("value", crystals.rainbowCrystal);
+        if ($("#score").text() === "") {
+            $("#score").text(crystals.rainbowCrystal);
 
-        console.log(rainbowValue);
+        }
+        else {
+            $("#score").text(parseInt($("#score").text()) + crystals.rainbowCrystal);
+
+
+        }
     });
 
+    //figure out how to win
+
+    // if (parseInt($("#score").text()) == parseInt($("#goal").text())) {
+    //     $("#wins").text("Wins:" + wins++);
+    //     $("#lostwon").text("You won!");
+    //     $("#score").text("");
+    //     $("#goal").text(randomNumber(19, 120));
+
+    // }
+    // if(newValue > $("#goal").html(randomNumber(19, 120))) {
+    //     $("#losses").text(losses++);
+    //     $("#lostwon").text("You lost!");
+    //     $("#score").text("");
+    // //     randomNumber();
+    // // }
+
+    // if ($("#score").text(parseInt($("#score").text())) === $("#goal").text(randomNumber(19, 120)));{
+    //     // alert("You won!");
+    // }
 
 
+
+
+
+
+
+    // set specific buttons specific values.
+
+    //this is the blue crystal button
+
+
+
+    //   // Use a function to initialize our calculator.
+    //   // This way when the user hits clear, we can guarantee a reset of the app.
+    //   function initializeCalculator() {
+    //     firstNumber = "";
+    //     secondNumber = "";
+    //     operator = "";
+    //     isOperatorChosen = false;
+    //     isCalculated = false;
+
+    //     $("#first-number, #second-number, #operator, #result").empty();
+    //   }
 
 };
-
-
-
-// set specific buttons specific values.
-
-//this is the blue crystal button
-
-
-
-
-
-
